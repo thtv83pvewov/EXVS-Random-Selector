@@ -20,7 +20,7 @@ $(function(){
 		url: "data/ms.csv",
 		dataType: "text",
 		success: function($csv){
-			handleResult($csv.split($CRLF));
+			handleResult($csv.split($LF));
 		},
 		error: function($msg){
 			console.log($msg);
