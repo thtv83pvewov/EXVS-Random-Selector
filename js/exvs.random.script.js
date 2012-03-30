@@ -170,7 +170,7 @@ $(function(){
 					$nowchecked = ''
 				}
 				$disp_html += '<input type="checkbox" id="check-'+$idx+'" cost="'+$arr_cost[i]+'" ms$idx="'+$idx+'" class="checks'+$arr_cost[i]+' checks" value="'+$arr_ms[$arr_cost[i]][$idx]['name']+'" '+$nowchecked+' />';
-				$disp_html += '<label for="check-'+$idx+'">'+$arr_ms[$arr_cost[i]][$idx]['name']+'</label>';
+				$disp_html += '<label style="display:inline;" for="check-'+$idx+'">'+$arr_ms[$arr_cost[i]][$idx]['name']+'</label>';
 				$disp_html += '</div><!--ms-list-->';
 				if($disp_count%$rowCount ==0)$disp_html += '</div>';
 			}
